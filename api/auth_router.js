@@ -23,7 +23,8 @@ router.post('/register', async (req,res,next)=>{
     try {
       //add user to db
       const [registeredUser]= await addUser(credentials) 
-      res.status(201).json({message: "Register Success",data: registeredUser})
+      const token=generateToken(registeredUser); 
+      res.status(201).json({message: "Register Success",data: registeredUser,token})
     } catch (err) {
        next(err)
     }
@@ -39,7 +40,7 @@ try {
     const user= await findBy(username)
     if (user && bcryptjs.compareSync(password,user.password)){
         const token=generateToken(user); 
-        res.status(200).json({message: `welcome ${user.username}`,token})
+        res.status(200).json({message: `welcome ${user.username}`,userId:user.id,token})
     }else{
         res.status(401).json({message:"You shall not pass!,Invalid Credentials"})
     }

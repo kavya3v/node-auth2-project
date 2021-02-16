@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  /* background-color: #97BC62FF; */
+}
+
+/* .body{
+  /* background-color: #97BC62FF; */
+
+
+header{
+  font-size: 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: auto;
+  padding-top:2%;
+  color:#2C5F2D;
+}
+ 
+.myNav{
+display:flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+align-items: center;
+font-size: 1.5rem;
+margin-left: 75%;
+}
+
+a{
+justify-content: end;
+align-items: center;
+font-size: 1.5rem;
+color: #2C5F2D;
+font-size: 1.5rem;
+text-decoration: none;
+padding: 2% 2%
+}
+
+a:hover{
+  color:black;
+  transition: ease-in-out 4px;
+}
+
+.register{
+  padding: 4% 10%;
+  margin:0 auto;
+  max-width: 60%;
+  border-radius: 2%;
+  border-style: groove 2px;
+  color: #2C5F2D;
+  font-size: 1.5rem;
+  font-style: italic;
+  background-color: RGBA(255,255,255,.8) ;
+  box-shadow: 4px 5px #4f6450;
+}
+
+.login{
+  padding: 4% 10%;
+  margin:0 auto;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 10rem; */
+  max-width: 60%;
+  border-radius: 2%;
+  border-style: groove 2px;
+  color: #2C5F2D;
+  font-size: 1.5rem;
+  font-style: italic;
+  background-color: RGBA(255,255,255,.8) ;
+  box-shadow: 4px 5px #4f6450;
+}
+
+.error{
+  color: red;
+  font-size: 1.4rem;
+  font-style: oblique;
+  padding: 3% 2%
+}
